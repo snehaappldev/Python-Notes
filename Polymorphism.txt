@@ -1,0 +1,182 @@
+Polymorphism:
++++++++++++++
+
+it means many forms
+
+
+single entity many forms lo pani chesthunte danni polymorphism antaru
+
+
+
+super()
+
+a nunchi b ni inherit chesukunnam anukondi 
+
+a is a parent
+ 
+b is a child
+
+
+
+A lo fun1() ane function undhi ----->implementation 1-->print("A")
+
+b lo fun2() tho patu fun1() ane function kuda undhi
+       |
+       V
+implimentation 2
+print("B")
+
+oka vela manam b yokka object ni create chesthe
+
+obj = B()
+
+obj.fun1()
+
+obj.fun1() ni cl chesthe b lo unna function a cl avthundhi
+
+
+mari
+
+b yokka object ni vadi  dani yokka parent ante A lo unna function ni call cheyalante super ane keyword use chestham
+ 
+
+it is a keyword
+
+Polymorphism
+-------------
+
+lets take an example
+
+a=10
+b=2
+print(a+b)
+
+Output
+-------
+12
+
+
+a="sneha"
+b="bapatu"
+
+print(a+b)
+
+Output
+------
+snehabapatu
+
+
+
+here we have two examples
+"""""""""""""""""""""""""
+in first example the + symble will be doing edition
+
+in second example the + symble will be doing concatination
+
+here + is single entity but it tooks multiple forms
+
+
+@@@@another example:
+--------------------
+
+1) print(len("vamsi"))
+
+    Output:
+    -------
+    5
+
+2) print(len[1,2,3,4,"vamsi"])
+
+   Output:
+   -------
+   5
+
+
+here also len is a single entity but it has number of forms
+
+
+###### another example:
+----------------------
+1)def mul(a,b,c=1,d=1):
+    print(a*b*c*d)
+
+  mul(2,3)
+
+Output:
+-------
+6
+
+2) def mul(a,b,c=4,d=1):
+     print(a*b*c*d)
+
+   mul(2,3,4)
+
+Output:
+-------
+24
+
+
+
+here mul anedhi oka function denni different ways lo differeent parameters tho pass chesaru idhe polimorphisam 
+
+
+
+
+@@@@@@@ one example of shape and overriding:
+===========================================
+prograamm :
+-----------
+
+class Shape:
+    def __init__(self, shape_type):
+        self.shape_type = shape_type
+
+    def print_my_type(self):
+        print("I am a", self.shape_type, "shape")
+
+class Square(Shape):
+    def __init__(self, length):
+        super().__init__("Square")
+        self.length = length
+
+    def calculate_area(self):
+        return self.length * self.length
+
+class Rectangle(Shape):
+    def __init__(self, length, breadth):
+        super().__init__("Rectangle")
+        self.length = length
+        self.breadth = breadth
+
+    def calculate_area(self):
+        return self.length * self.breadth
+
+def main():
+    # Create a Square object
+    square = Square(5)
+    print("Square type:")
+    square.print_my_type()
+    area = square.calculate_area()
+    print("Area:", area)
+
+    # Create a Rectangle object
+    rectangle = Rectangle(5, 4)
+    print("\nRectangle type:")
+    rectangle.print_my_type()
+    area = rectangle.calculate_area()
+    print("Area:", area)
+
+if __name__ == "__main__":
+    main()
+
+
+Output:
+-------
+
+Square type:
+I am a Square shape
+Area: 25
+
+Rectangle type:
+I am a Rectangle shape
+Area: 20

@@ -1,0 +1,46 @@
+Constructors in python::
+++++++++++++++++++++++++
+
+
+constructor ni vadi object create chesthunnapudu kani initialize chesthunnapudu kani adhe time lo if your using setting property
+
+constructors
+      |
+      v
+
+object creation
+      |
+      V
+initialization
+
+
+
+constructors are two types :
+
+they are 1: default ------------> example (__init__(self)):
+
+         2: parametrized--------> example self tho patu vere perameters unte parameterized
+
+example programme of construtors to print age and name:
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+class person:
+  def __init__(self,name,age):
+    self.name = name
+    self.age = age
+  def Getvalue(self):
+    print("name of the person is" ,self.name,  "and age is " ,self.age,".",sep="")
+
+name = input()
+age = int(input())
+p = person(name,age)
+p.Getvalue()
+
+
+Output:
+--------
+sneha
+24
+name of the person issnehaand age is 24.
+
+

@@ -1,0 +1,145 @@
+functions in python:::
++++++++++++++++++++++++
+
+ a block of code which is only runs when it is called function
+
+you can pass the data known as paramerers into a function
+
+@@@@@the entity which is calling a function that is called parameter
+
+
+syntax of functions:::
+======================
+
+
+first we use the keyword "def"
+
+
+def function_name(parameters,perameters):
+    indentation  -->line1
+    indentation  -->line2
+    indentation  -->line3
+    indentation  -->line4
+    indentation  -->line5
+
+oka vela ee function a call chesthunna entity ki  data amina pampali ante
+
+ indentation  -->return ani type chesi space ichi manam pamaplai anukune data rayali
+
+example of functions::
+-----------------------
+
+1)def Hai_sneha():
+   print("hello sneha")
+
+output:
+-------
+there is no out put just function is created.
+
+2)then how we will call the function
+ 
+like this:
+
+   Hai_sneha()
+
+out put:
+-------
+hello sneha
+
+3)Anothor programme for addition  of two numbers with function:
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+program:
+-------
+
+def add(a,b):
+  print(a+b)
+
+the function will be created after creaying the function we can do
+
+--->add(3,5)
+
+"""now the 3 will  be stored by a
+and the 5 will be stored by b"""
+
+out put is:
+
+8
+
+4)Anothor programme for subtraction  of two numbers with function:
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+def add(a,b):
+return u-v
+
+the function will be created after creaying the function we can do
+
+we assign one variable here
+
+z= sub(8,5)
+
+print(z)
+
+"""Actually what is happening here is this is the correct way to approch that y we write this code"""
+
+Output :
+
+3
+
+5) anothor way to excicute the function:
+++++++++++++++++++++++++++++++++++++++++
+programm:
+---------
+def say_hai(name):
+  """
+  this function is used to say hi
+  """
+  print("hai",name)
+
+now the function is created 
+
+say_hai("sneha")
+
+output:
+-------
+hai sneha
+********************************************************************
+
+@we can create our own great-looking documentation programmatically
+
+********************************************************************
+by using this:
+
+syntax:
+
+print(say_hai.__doc__)
+
+program:
+--------
+def say_hai(name):
+  """
+  this function is used to say hi
+  """
+  print("hai",name)
+
+the function is created after  we wrote
+
+print(say_hai.__doc__)
+
+Output:
+-------
+
+ this function is used to say hi
+
+
+
+
+
+
+
+
+
+
+
+
+

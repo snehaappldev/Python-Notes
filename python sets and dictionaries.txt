@@ -1,0 +1,140 @@
+python sets and dictionaries::
+
+sets:
+=====
+ -->  sets are used to store multiple items in the sigle variable.
+----> and it is a one of the data type
+--->in sets items and elements are not mutable but you can add and remove
+
+
+Adding the elements in sets
+=============================
+
+a={1, 2, 3, 'sneha'}
+
+a.add(4)
+
+out put::
+
+a={1, 2, 3, 4, 'sneha'}
+
+
+to find type we can use::
++++++++++++++++++++++++++
+
+a={1, 2, 3, 'sneha'}
+
+type(a)
+
+output:
+-------
+set
+
+to find the length of the string ::
++++++++++++++++++++++++++++++++++
+
+l= ['s','n','e','h','a']
+len(l)
+
+output:
+
+5
+
+how can we access the elements in python:
++++++++++++++++++++++++++++++++++++++++++
+by using the for loop we can iterate one by one
+
+programm:
+----------
+for sneha in a:
+  print(sneha)
+
+output:
+-------
+1
+2
+3
+sneha
+
+
+
+
+dictionaries:
+--------------
+
+in python  dictinaries can store key-value pairs.
+
+dictionaries can be created by using the dict() constructor or {}
+
+once you created the dictionaries you can add,remove,or update elements using the methods dict.update() 
+
+
+to find type we can use::
++++++++++++++++++++++++++
+b={
+    'name':'sneha','age':'10','marks':'20'
+}
+print(type(b))
+
+output:
+-------
+ <class 'dict'>
+
+get the keys of the dictonary:
+------------------------------
+
+print(b.get('age'))
+
+output:
+-------
+10
+
+
+another example:
+
+x = b.keys()
+print(x)
+
+output:
+-------
+dict_keys(['name', 'age', 'marks'])
+
+unna values anni get cheyadaniki:
+---------------------------------
+for i in x:
+  print(b.get(i))
+
+output:
+-------
+sneha
+10
+20
+
+@@@keys vadi keys anni techukovachu 
+
+###get vadi indivdula keys ki unna values techukovachu
+
+we can create the items :
++++++++++++++++++++++++++
+z = b.items()
+print(z)
+
+output:
+-------
+dict_items([('name', 'sneha'), ('age', '10'), ('marks', '20')])
+
+comming to the concept ::
+------------------------
+
+there are 4 major properties 
+================================================
+       sets          vs      dictionaries
+===============================================
+
+   un orderd               Orderd
+
+not indexed                indexed
+
+not mutable                mutable
+
+duplictes not allowed      duplictes not allowed

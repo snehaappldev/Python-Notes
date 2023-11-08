@@ -1,0 +1,61 @@
+Types of methods::
++++++++++++++++++
+
+there are two types of methods 
+
+1 . satic method:
+-----------------
+
+depends on all objects
+
+
+aaa object nunchi cl chesina dani behaviour maradhu
+
+self undadhu
+
+example of static method:
+------------------------
+
+class Student:
+    name = "Parkin"
+
+    def __init__(self):
+        self.age = 0  # Initialize age to 0 when a Student object is created
+
+    def store_details(self, age):
+        self.age = age
+
+    @staticmethod
+    def Hello():
+        print("Hello")
+
+    def print_age(self):
+        print(self.age)
+
+s = Student()
+s.store_details(60)
+s.print_age()
+
+s1 = Student()
+s1.store_details(25)  # You can set a different age for s1
+s1.print_age()
+
+# Call the static method
+Student.Hello()
+
+Output:
+-------
+
+60
+25
+Hello
+
+
+
+2 . instance method:
+--------------------
+it depends on object
+
+aaa object dwara cl chesthunnaru ane dani batti deni  behaviour maruthadhi
+
+self untundhi

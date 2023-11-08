@@ -1,0 +1,150 @@
+Recursion in phython:
+
+recursion means A function call by it self is called recursion
+
+it is like an algoritham
+
+DSA---> data structures And algoritham
+
+
+data structures :
+-----------------
+
+manam data ni programm lo temporary ga save chesthunnapudu manam diferent diferent ways lo manam store chesukuntam memory lo 
+
+
+Algoritham:;
+------------
+
+problem ni different approches use chesi solve cheyadanni algorithms antaru
+
+
+
+
+problem:
+--------
+
+App 1
+
+App 2
+
+App 3
+
+
+recurrsion is one of the vary vary important algorithamic method
+
+
+-->loops use chesi chese every work recurrusion use chesi cheyochu
+
+-->recursion vadi chese prathi pani loops vadi cheyochu
+
+
+
+                           call 
+                 entity-------------> function
+
+function ni cl cheyadaniki use chese entity 
+
+
+1)def fun():
+-------
+------
+-------
+fun()
+
+
+2)def a()----|
+-------      |
+-------      |
+-------      |
+def b()      |----->oka function lo nunchi inko function ni call cheyochu
+-------      |
+-------      |
+-------      |
+a(a)---------|
+
+
+Recursion:
+----------
+
+A function calling it self is called recursion
+
+
+
+def fun()
+--------
+--------
+--------
+fun()
+-----
+-----
+-----
+
+
+
+Recursion 
+
+
+def sayhi():
+print("")
+sayhi()
+sayhi()
+
+looping loops--->terminate-
+                 1-conditions
+                 2-loops 
+
+in looping conditions we called as conditions only 
+
+-->but in recursion we called as base conditions
+
+-->by default problems want recurssion fact o factorial 
+
+n!=n*n-1*n-2*n-3-------3x,2x
+
+
+fact(n) = n*fact(n-1)
+         
+          n*n-1*fact(n-2)
+
+
+looping ni stop cheyadaniki condition pedithe AAA condition ni base condition antaru::
+--------------------------------------------------------------------------------------
+
++++++++++++++++++++++++++++++
+
+fact(n) = n*fact(n-1)
+        = n*n-1*fact(n-2)
+                      |
+                      |
+                  fact(1)
+Bc :- n==1 or n==0
+
+  ans=1
+++++++++++++++++++++++++++++++
+
+
+
+factorial of n  code inn phython::
+==================================
+
+ def fact(n):
+ if n == 1 or n == 0:
+  return 1
+ else:
+     return n*fact(n-1)
+
+
+function is created successfully 
+
+After
+
+x= fact(3)
+
+print(x) 
+
+output:
+=======
+
+6
+  
