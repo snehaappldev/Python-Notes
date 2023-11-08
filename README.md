@@ -1,0 +1,2 @@
+# Python-Notes
+learning purpose
